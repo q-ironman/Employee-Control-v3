@@ -43,8 +43,7 @@ namespace Employee_Control_v3
         public void Delete(string _id)
         {
             XDocument emps = XDocument.Load(_path);
-            //emps.Descendants("Employee").Where(x => x.Element("ID").Value == _id).Remove();
-            //emps.Save(_path);
+            
             emps.Descendants("Employee").Single(x => x.Element("ID").Value == _id).Remove();
             emps.Save(_path);
 
