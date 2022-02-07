@@ -31,15 +31,7 @@ namespace Employee_Control_v3
             }
 
         }
-        //public static EmployeeXMLService OnCreate()
-        //{
-        //    return new EmployeeXMLService(@"C:\Users\osman\Desktop\Lectures\C#\Employee Control v3\Employees.xml");
-        //}
-        //public static EmployeeXMLService OnCreate(string path)
-        //{
-
-        //    return new EmployeeXMLService(path);
-        //}
+        
         public void Delete(string _id)
         {
             XDocument emps = XDocument.Load(_path);
